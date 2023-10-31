@@ -1,4 +1,158 @@
-.container {
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* HEADER */
+.header {
+  background-color: #F8E1DB;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 50px;
+}
+
+/* INTRO */
+.intro {
+  height: 500px;
+  background-image: url('./img/BG.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* ACTIVITIES */
+.activities {
+  background-color: #FAF4F2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.activities__header {
+  display: flex;
+  justify-content: center;
+}
+
+.activities__img {
+  display: flex;
+  justify-content: center;
+}
+
+.activities__body {
+  display: flex;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.item {
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.item .item__img {
+  background-image: url('./img/product1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 20px;
+
+  position: relative;
+  width: 100%;
+}
+
+.item:nth-child(2) .item__img {
+  background-image: url('./img/product4.png');
+}
+.item:nth-child(3) .item__img {
+  background-image: url('./img/product5.png');
+}
+
+.item__icon {
+  background-color: #F4F0F0;
+  opacity: 0.7;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.item button {
+  background-color: #E8E8E8;
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+.activities__footer{
+  display: flex;
+  justify-content: center;
+}
+
+.activities__footer button {
+  border: 1px solid #E76F51;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: #E76F51;
+  background-color: transparent;
+}
+
+/* CONTACT */
+.contact {
+  background-image: url('./img/mask.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__left, 
+.contact__right {
+  width: 45%;
+}
+
+.contact__right .right__tile,
+.contact__right .right__desc {
+  color: #8D8D8D;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+
+
 
